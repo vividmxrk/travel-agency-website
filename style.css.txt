@@ -1,0 +1,126 @@
+/* General Reset */
+body, h1, h2, p, button {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: rgba(0, 0, 0, 0.8); /* Solid background */
+  color: #fff;
+}
+
+.company {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+.company-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  gap: 10px; /* Added spacing between buttons */
+}
+
+.menu button {
+  background: #87CEEB; /* Updated to sky blue */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.menu button:hover {
+  background: #00BFFF; /* Slightly darker blue on hover */
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 50px;
+  color: white;
+}
+
+.welcome-box {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 300px;
+}
+
+.welcome-message {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #f4f4f4;
+}
+
+.explore-button {
+  display: inline-block;
+  background: #87CEEB; /* Updated to sky blue */
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.explore-button:hover {
+  background: #00BFFF; /* Slightly darker blue on hover */
+}
+
+.hero-text {
+  max-width: 500px;
+  text-align: right;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+}

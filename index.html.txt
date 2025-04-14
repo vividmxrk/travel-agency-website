@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Agency</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="company">
+      <span class="logo">[Logo]</span>
+      <h1 class="company-name">Travel Agency</h1>
+    </div>
+    <div class="menu">
+      <button>Home</button>
+      <button>About Us</button>
+      <button>Packages</button>
+      <button>Car Rental</button>
+      <button>Gallery</button>
+      <button>Contact Us</button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <video autoplay loop muted class="background-video">
+      <source src="placeholder-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+      <div class="welcome-box">
+        <p class="welcome-message">Welcome to Travel Agency, your gateway to unforgettable adventures. Discover amazing destinations, tailored packages, and experiences you'll cherish forever.</p>
+        <a href="explore.html" class="explore-button">Explore</a>
+      </div>
+      <div class="hero-text">
+        <h2>Your Next Adventure Awaits!</h2>
+        <p>Discover the world with us. Explore exotic locations, unique cultures, and thrilling experiences.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
