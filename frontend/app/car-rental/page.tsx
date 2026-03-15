@@ -1,0 +1,3 @@
+import Image from 'next/image';
+import { cars } from '@/lib/data';
+export default function Cars(){return <main className="section"><h1 className="mb-6 text-4xl font-bold">Car Rental</h1><div className="grid gap-6 md:grid-cols-2">{cars.map((car)=><article key={car.name} className="card overflow-hidden"><Image src={car.image} alt={car.name} width={600} height={320} className="h-56 w-full object-cover" /><div className="p-5"><h2 className="text-xl font-semibold">{car.name}</h2><p>₹{car.pricePerDay}/day • {car.seats} seats • {car.fuel}</p><button className="btn mt-4">Book Car</button></div></article>)}</div></main>}
