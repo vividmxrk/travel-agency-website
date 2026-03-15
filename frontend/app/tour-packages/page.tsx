@@ -1,0 +1,4 @@
+import Link from 'next/link';
+import Image from 'next/image';
+import { packages } from '@/lib/data';
+export default function PackagePage(){return <main className="section"><h1 className="mb-6 text-4xl font-bold">Tour Packages</h1><div className="grid gap-6 md:grid-cols-3">{packages.map((pkg)=><article key={pkg.slug} className="card overflow-hidden transition hover:-translate-y-1"><Image src={pkg.image} alt={pkg.destination} width={420} height={260} className="h-48 w-full object-cover" /><div className="space-y-2 p-5"><h2 className="text-xl font-semibold">{pkg.destination}</h2><p>₹{pkg.price} • {pkg.duration}</p><p>{pkg.description}</p><div className="flex gap-3"><button className="btn">Book Now</button><Link href={`/tour-packages/${pkg.slug}`} className="rounded-full border px-4 py-2">View Details</Link></div></div></article>)}</div></main>}

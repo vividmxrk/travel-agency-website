@@ -1,0 +1,1 @@
+export default function Page(){return <div><h1 className="text-3xl font-bold capitalize">packages Management</h1><p className="mt-3 text-slate-600">Use backend APIs to add, edit, delete and manage packages data.</p></div>}
